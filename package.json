@@ -1,8 +1,8 @@
 {
   "name": "nepalitraveldestination",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A backend api for Nepal travel destination",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
@@ -10,7 +10,7 @@
     "migrate": "node src/database/init.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ajay ranabhat",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -23,12 +23,12 @@
     "express-rate-limit": "^7.5.0",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
-    "morgan": "^1.10.0",
     "sequelize": "^6.37.5",
     "sqlite3": "^5.1.7",
     "xss-clean": "^0.1.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+     "morgan": "^1.10.0"
   }
 }
