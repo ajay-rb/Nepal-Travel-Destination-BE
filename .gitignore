@@ -1,0 +1,42 @@
+# 🚀 Node.js Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 🚀 Environment Variables & Secrets
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 🚀 Database Files (SQLite)
+database.sqlite
+*.sqlite3
+*.db
+
+# 🚀 Logs
+logs/
+*.log
+logfile.txt
+debug.log
+
+# 🚀 OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# 🚀 Compiled Output
+dist/
+build/
+coverage/
+
+# 🚀 IDE-Specific Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🚀 Miscellaneous
+*.bak
+*.swp
+*.tmp
