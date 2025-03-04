@@ -4,7 +4,7 @@ const { Op } = require("sequelize");
 exports.getAllDestinations = async (tags) => {
   let filter = {};
   if (tags) {
-    filter.tags = { [Op.like]: `%${tags}%` }; // Filter by tags
+    filter.tags = { [Op.like]: `%${tags}%` }; 
   }
   return await Destination.findAll({ where: filter });
 };
