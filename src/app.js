@@ -30,17 +30,13 @@ const limiter = rateLimit({
 });
 app.use("/api", limiter);
 
-// ✅ Request Body Parsing
 app.use(bodyParser.json({ limit: "10kb" })); // Limits body size to prevent DOS attacks
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// ✅ Routes
 app.use("/api", routes); // Use the new routes index
 
-// ✅ Global Error Handling Middleware
 app.use(errorHandlers);
 
-// ✅ Graceful Shutdown Handling
 process.on("SIGINT", () => {
   console.log("\nShutting down server gracefully...");
   process.exit(0);
